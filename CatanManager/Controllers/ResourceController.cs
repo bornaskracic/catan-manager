@@ -12,7 +12,7 @@ namespace CatanManager.Controllers
     [Route("[controller]")]
     public class ResourceController : ControllerBase
     {
-        private readonly IResourceService _resourceService = new ResourceService();
+        private readonly IResourceService _resourceService;
 
         public ResourceController(IResourceService resourceService)
         {
